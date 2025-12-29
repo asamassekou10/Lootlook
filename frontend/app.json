@@ -15,15 +15,22 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.lootlook.app"
+      "bundleIdentifier": "com.alhassane.lootlook",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#111827"
       },
-      "package": "com.lootlook.app",
-      "edgeToEdgeEnabled": true
+      "package": "com.alhassane.lootlook",
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -37,6 +44,12 @@
           "cameraPermission": "Allow LootLook to access your camera to scan items."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "44004968-e7a4-42c7-bb72-ef20a07efedf"
+      }
+    }
   }
 }
