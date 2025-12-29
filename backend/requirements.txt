@@ -1,0 +1,19 @@
+# LootLook Backend Dependencies
+
+# Core Framework
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6  # Required for file uploads
+
+# Configuration & Validation
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# AI & Data Services
+google-generativeai>=0.3.0  # Gemini API
+google-search-results>=2.4.0  # SerpApi
+
+# Development
+httpx>=0.26.0  # For testing
+pytest>=7.4.0
+pytest-asyncio>=0.23.0
